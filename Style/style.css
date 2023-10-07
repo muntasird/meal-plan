@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryColor:#649483;
+    --secondaryColor:#ffece1;
+    --thirdColor:#dc7017;
+    --primaryFont:'Open Sans', sans-serif;
+    --secondaryFont:'PT Sans', sans-serif; 
+    --optionalFont:'Ropa Sans', sans-serif; 
+}
+
+/* *COMMON CSS STARTS */
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.row{
+    display: flex;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.head h2{
+    font-size: 75px;
+    font-family: var(--primaryFont);
+    color: var(--secondaryColor);
+    font-weight: 700;
+}
+
+/* *COMMON CSS ENDS */
+
+/* *NAVBAR STYILING STARTS */
+
+nav{
+    background-color: var(--secondaryColor);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom: 1px solid #fff;
+}
+
+nav .logo,
+nav .menu,
+nav .cart{
+    width: 33.33%;
+}
+nav .cart ul{
+    display: flex;
+    margin: 30px 0;
+    justify-content: flex-end;
+}
+nav .menu ul{
+    display: flex;    
+    margin: 30px 0;
+    justify-content: center;
+}
+
+nav .menu  ul li a{
+    font-family: var(--primaryFont);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+nav .menu  ul li{
+    margin: 0 2vw;
+}
+
+nav .cart ul li{
+    margin: 0 2vw;
+}
+nav a{
+    color:var(--primaryColor);
+}
+nav .cart ul li .oder{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: var(--secondaryFont);
+    font-weight: 600;
+    font-size: 14px;
+}
+/* *NAVBAR STYILING ENDS */
+
+/* *BANNER SECTION DESIGN* */
+
+#banner {
+    background-image: url(../img/Meal\ Plans-shap.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top-left;
+    background-size: cover;
+    height: 837px; 
+    background-color:var(--secondaryColor);
+}
+#banner .bannerpro1,
+#banner .bannerpro2{
+    width: 50%;
+    margin: 0 30px;
+}
+
+
+.bannerpro1 img{
+    margin: 100px  0 0 0;
+}
+.bannerpro1 h2{
+    font-family: var(--primaryFont);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primaryColor);
+    text-align: center;
+    margin: -25px 0 0 40px ;
+}
+
+.bannerpro1 p{
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    color: var(--primaryColor);
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0 0 20px ;
+}
+
+
+.bannerpro2 h2{
+    text-align-last: left;
+    font-family: var(--primaryFont);
+    color: var(--thirdColor);
+    font-size: 75px;
+    font-weight: 600;
+    margin: 165px 0 0 0;
+}
+
+
+.bannerpro2 .journey{
+    display: inline-block;
+    font-family: var(--secondaryFont);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    padding: 9px 20px;
+    border-radius: 15px;
+    margin: 20px 0 0 0 ;
+}
+.bannerpro2 .learnMore{
+    display: inline-block;
+    font-family: var(--secondaryFont);
+    color: var(--primaryColor);
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid ;
+    border-color: var(--primaryColor);
+    padding: 9px 15px;
+    border-radius: 15px;
+    margin: 20px 0 0 0 ;
+}
+
+
+.food-gallery .title{
+    transform: rotate(90deg);
+}
+
+
+
+.food-gallery {
+    display: flex;
+}
+
+
+.food-gallery .galr1{
+    width: 25%;
+}
+
+/* *BANNER SECTION DESIGN ENDS* */ 
+
+
+/* *FAVOURITE SECTION */
+
+
+#favourite{
+    background-color: var(--primaryColor);
+}
+
+
+#favourite .head{
+    padding-top: 100px;
+}
+#favourite .section-quats h2{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    color: var(--secondaryColor);
+}
+#favourite .favourite-card1,
+#favourite .favourite-card2,
+#favourite .favourite-card3{
+    width: calc(33.33% - 30px) ;
+    margin: 50px 15px;
+    background-color: var(--secondaryColor);
+    border-radius: 15px;
+}
+
+.favourite-card1 h2,
+.favourite-card2 h2,
+.favourite-card3 h2{
+    font-size: 18px;
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    color: var(--primaryColor);
+    text-align: center;
+    padding: 90px;
+}
+.favourite-card1,
+.favourite-card2,
+.favourite-card3{
+    text-align: center;
+}
+.favourite-card1 p,
+.favourite-card2 p,
+.favourite-card3 p{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--optionalFont);
+    color: var(--primaryColor);
+    text-align: center;
+    padding: 60px;
+}
+/* *FAVOURITE SECTION ENDS */
+
+/* *APRIL MENU SECTION* */
+
+
+#april-menu{
+    background-color: var(--secondaryColor);
+}
+#april-menu .april-menu-thumbnail,
+#april-menu .april-menu-text{
+    
+    margin-top: 100px;
+    width: 50%;
+}
+
+
+#april-menu .head h2{
+    color: var(--thirdColor);
+    padding: 10px 80px 10px 30px;
+}
+.april-menu-text .tit{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--secondaryFont);
+    color: var(--primaryColor);
+    margin-left: 30px;
+}
+.april-menu-thumbnail img{
+    text-align: center;
+}
+.april-menu-text p{
+    text-align: justify;
+    padding: 30px 150px 30px 30px;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.april-product .apr-pro1,
+.april-product .apr-pro2{
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+}
+.april-product .apr-pro1 .oder,
+.april-product .apr-pro2 .oder{
+    padding: 15px;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 15px;
+}
+/* *APRIL MENU SECTION ENDS* */
+
+/* *racipes section* */
+
+#raceipes{
+    background-color: var(--secondaryColor);
+padding-top: 80px;
+}
+#raceipes .reacipes-description,
+#raceipes .racipes-thumb{
+    width: 50%;
+}
+
+#raceipes .reacipes-description .tit{
+    font-family: var(--secondaryFont);
+    color: var(--primaryColor);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#raceipes .racipes-thumb img{
+    text-align: right;
+}
+
+#raceipes .reacipes-description .head h2{
+    color: var(--thirdColor);
+}
+
+
+
+/* *racipes section ends* */
